@@ -1,0 +1,32 @@
+{
+  "name": "pixi-ears",
+  "version": "1.0.0",
+  "description": "A templating library for PIXI",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikkoH/pixi-ears.git"
+  },
+  "keywords": [
+    "pixi",
+    "templating"
+  ],
+  "author": "Mikko Haapoja <me@mikkoh.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MikkoH/pixi-ears/issues"
+  },
+  "homepage": "https://github.com/MikkoH/pixi-ears",
+  "dependencies": {
+    "pixi": "^0.2.1"
+  },
+  "devDependencies": {
+    "brfs": "^1.2.0"
+  }
+}
