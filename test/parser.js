@@ -5,7 +5,7 @@ var test = require( 'tape' ),
 	data = require( './data/testData' );
 
 
-var template = fs.readFileSync( __dirname + '/data/testTemplate', 'utf8' );
+var template = fs.readFileSync( __dirname + '/data/testTemplate.ear', 'utf8' );
 
 var parsedData;
 
