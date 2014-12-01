@@ -5,17 +5,22 @@ module.exports = {
 		mySprite: {
 
 			texture: 'someImage.png',
-			position: { x: 100, y: -20 }
+			position: '100 -20'
 		},
 
 		myMovieClip: {
 
-			textures: [ 'someImage1.png', 'someImage2.png', 'someImage3.png', 'someImage4.png' ]
+			textures: 'someImage1.png someImage2.png someImage3.png someImage4.png'
+		},
+
+		mySecondMovieClip: {
+
+			textures: 'someImage{{1..4}}.png'
 		},
 
 		myText: {
 
-			text: 'something',
+			text: '{{somethingFromJSON}}',
 			style: {
 
 				font: 'bold 20px Arial',
@@ -23,21 +28,9 @@ module.exports = {
 			}
 		},
 
-		item0: {
+		"item{{0..2}}": {
 
-			position: { x: 0, y: 0 },
-			texture: 'someImage.png'
-		},
-
-		item1: {
-
-			position: { x: 0, y: 40 },
-			texture: 'someImage.png'
-		},
-
-		item2: {
-
-			position: { x: 0, y: 80 },
+			position: '0 {{$i*40}}',
 			texture: 'someImage.png'
 		}
 	}
