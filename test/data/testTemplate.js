@@ -5,7 +5,7 @@ module.exports = {
 		mySprite: {
 
 			texture: 'someImage.png',
-			position: { x: 100, y: 20 }
+			position: { x: 100, y: -20 }
 		},
 
 		myMovieClip: {

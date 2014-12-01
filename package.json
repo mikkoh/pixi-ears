@@ -27,6 +27,7 @@
     "pixi": "^0.2.1"
   },
   "devDependencies": {
-    "brfs": "^1.2.0"
+    "brfs": "^1.2.0",
+    "tape": "^3.0.3"
   }
 }

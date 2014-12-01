@@ -1,7 +1,7 @@
 container
 	mySprite
 		texture someImage.png
-		position 100 20
+		position 100 -20
 
 	myMovieClip
 		textures someImage1.png someImage2.png someImage3.png someImage4.png
