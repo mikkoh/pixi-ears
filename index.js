@@ -12,24 +12,28 @@ function pixiEars( template, data ) {
 
 function create( toMake, into, parent ) {
 
-	var into = into || {},
-		pixiThing;
+	var pixiThing;
+
+	into = into || {};
 
 	for( var i in toMake ) {
 
 		if( typeof toMake[ i ] == 'object' ) {
 			
-			var pixiThing = get( toMake[ i ] );
+			pixiThing = get( i, toMake[ i ] );
 
-			if( parent )
-				parent.addChild( pixiThing );
+			if( pixiThing ) {
 
-			into[ i ] = function( pixiThing ) {
+				if( parent )
+					parent.addChild( pixiThing );
 
-				return pixiThing;
-			}.bind( undefined, pixiThing );
+				into[ i ] = function( pixiThing ) {
 
-			create( toMake[ i ], into[ i ], pixiThing );
+					return pixiThing;
+				}.bind( undefined, pixiThing );
+
+				create( toMake[ i ], into[ i ], pixiThing );
+			}
 		}
 	}
 
