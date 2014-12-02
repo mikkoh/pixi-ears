@@ -1,6 +1,7 @@
 var fs = require( 'fs' );
 
-var pixiEars = require( './..' ),
+var test = require( 'prova' ),
+	pixiEars = require( './..' ),
 	data = require( './data/testData' );
 
 var template = fs.readFileSync( __dirname + '/data/testTemplate.ear', 'utf8' );

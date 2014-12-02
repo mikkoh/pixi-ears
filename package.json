@@ -28,6 +28,6 @@
   },
   "devDependencies": {
     "brfs": "^1.2.0",
-    "tape": "^3.0.3"
+    "prova": "^2.1.1"
   }
 }

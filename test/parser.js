@@ -1,6 +1,6 @@
 var fs = require( 'fs' );
 
-var test = require( 'tape' ),
+var test = require( 'prova' ),
 	parser = require( '../lib/parser' ),
 	data = require( './data/testData' );
 
@@ -58,7 +58,7 @@ test( 'MovieClips were parsed properly', function( t ) {
 
 	textures = parsedData.container.mySecondMovieClip.textures;
 	t.ok( Array.isArray( textures ), 'Textures is array' );
-	t.ok( textures[ 0 ] == 'someImage1.png' && textures[ 1 ] == 'someImage2.png', 'Generated names were correct: ' + textures );
+	t.ok( textures[ 0 ] == 'test/data/someImage1.png' && textures[ 1 ] == 'test/data/someImage2.png', 'Generated names were correct: ' + textures );
 });
 
 test( 'Positions were parsed properly', function( t ) {
@@ -71,7 +71,7 @@ test( 'Positions were parsed properly', function( t ) {
 	t.equal( parsedData.container.mySprite.position.y, -20 , 'Static y is correct' );
 
 	t.equal( parsedData.container.item1.position.x, 0 , 'Dynamic x is correct' );
-	t.equal( parsedData.container.item1.position.y, 40 , 'Dynamic y is correct' );	
+	t.equal( parsedData.container.item1.position.y, 100 , 'Dynamic y is correct' );	
 });
 
 
