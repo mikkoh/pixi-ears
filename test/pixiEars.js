@@ -7,7 +7,8 @@ var template = fs.readFileSync( __dirname + '/data/testTemplate.ear', 'utf8' );
 
 var pixi = pixiEars( template, data );
 
-console.log( pixi.container() );
-console.log( pixi.container.item0() );
-console.log( pixi.container.myMovieClip() );
-console.log( pixi.container.myText() );
+console.log( 'container', pixi.container() );
+console.log( 'mySprite', pixi.container.mySprite() );
+console.log( 'item1', pixi.container.item1() );
+console.log( 'myMovieClip', pixi.container.myMovieClip() );
+console.log( 'myText', pixi.container.myText() );

@@ -4,6 +4,7 @@ container
 		position 100 -20
 
 	myMovieClip
+		visible false
 		textures test/data/someImage1.png test/data/someImage2.png test/data/someImage3.png
 
 	mySecondMovieClip
@@ -20,4 +21,5 @@ container
 		rotation {{$i / 2 * Math.PI}}
 		alpha 0.5
 		anchor 0.25 0.25
+		scale 0.5 0.5
 		texture test/data/someImage1.png
